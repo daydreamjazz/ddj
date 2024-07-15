@@ -111,6 +111,9 @@ pre.w-code-block code {
 .w-webflow-badge * {
   display: None !important;visibility: hidden !important;
 }
+.w-webflow-badge {
+  display: None !important;visibility: hidden !important;
+}
 .w-webflow-badge > img {
   display: inline-block !important;
   visibility: visible !important;

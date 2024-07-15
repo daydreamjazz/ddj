@@ -111,6 +111,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .body {
+    overflow: hidden;
+  }
+
   .shape_1 {
     width: 60vw;
     margin-left: -5vw;
@@ -130,6 +134,19 @@
   .logocontainer {
     width: 100%;
     max-width: 100%;
+    position: fixed;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+  }
+
+  .navcontainer {
+    position: fixed;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
   }
 
   .infoicon, .ticketsicon {
@@ -138,6 +155,10 @@
 }
 
 @media screen and (max-width: 479px) {
+  .body {
+    overflow: hidden;
+  }
+
   .shape_1 {
     width: 160vw;
     max-width: none;
@@ -150,7 +171,7 @@
     width: 120vw;
     max-width: none;
     margin-top: 0;
-    margin-left: -100vw;
+    margin-left: -96vw;
   }
 
   .shape_3 {
@@ -158,6 +179,22 @@
     max-width: none;
     margin-top: 40vh;
     margin-left: -120vw;
+  }
+
+  .logocontainer {
+    position: fixed;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+  }
+
+  .navcontainer {
+    position: fixed;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
   }
 
   .infoicon, .ticketsicon {
