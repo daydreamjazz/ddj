@@ -1,0 +1,166 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
+.container {
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-width: 100vw;
+  max-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  position: relative;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+  overflow: hidden;
+}
+
+.body {
+  background-color: #dadada;
+}
+
+.shape_1 {
+  transform-origin: 50% 80%;
+  width: 60%;
+  margin-bottom: 30vh;
+  margin-left: -10vw;
+  margin-right: -10vw;
+}
+
+.shape_2 {
+  z-index: 2;
+  width: 70%;
+  margin-bottom: 0%;
+  margin-left: -20vw;
+  margin-right: -20vw;
+  position: relative;
+}
+
+.shape_3 {
+  margin-left: -30vw;
+  transform: perspective(200px)rotate(-20deg);
+}
+
+.logocontainer {
+  z-index: 10;
+  width: 45%;
+  max-width: 45%;
+  margin-top: 0%;
+  margin-left: 0%;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.navcontainer {
+  z-index: 10;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  max-width: none;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.infobutton, .ticketsbutton {
+  width: auto;
+  max-width: none;
+  height: 10%;
+}
+
+.infoicon {
+  width: auto;
+  height: 80px;
+}
+
+.ticketsicon {
+  height: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .shape_1 {
+    width: 60vw;
+    margin-left: -5vw;
+    margin-right: -20vw;
+  }
+
+  .shape_2 {
+    margin-bottom: 20vh;
+  }
+
+  .shape_3 {
+    width: 120vw;
+    margin-top: 20vh;
+    margin-left: -60vw;
+  }
+
+  .logocontainer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .infoicon, .ticketsicon {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .shape_1 {
+    width: 160vw;
+    max-width: none;
+    margin-bottom: 150vh;
+    margin-left: -25vw;
+    margin-right: -40vw;
+  }
+
+  .shape_2 {
+    width: 120vw;
+    max-width: none;
+    margin-top: 0;
+    margin-left: -100vw;
+  }
+
+  .shape_3 {
+    width: 160vw;
+    max-width: none;
+    margin-top: 40vh;
+    margin-left: -120vw;
+  }
+
+  .infoicon, .ticketsicon {
+    height: 44px;
+  }
+}
